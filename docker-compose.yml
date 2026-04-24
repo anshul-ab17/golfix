@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: golfix-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: golfix
+      POSTGRES_PASSWORD: golfix_dev_password
+      POSTGRES_DB: golfix
+    ports:
+      - "5433:5432"
+    volumes:
+      - golfix_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U golfix -d golfix"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  golfix_pgdata:
