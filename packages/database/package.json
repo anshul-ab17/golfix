@@ -1,0 +1,17 @@
+{
+  "name": "@golfix/database",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "@prisma/adapter-pg": "latest",
+    "@prisma/client": "latest",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.11",
+    "dotenv": "^17.4.2",
+    "prisma": "^7.8.0",
+    "typescript": "latest"
+  }
+}
