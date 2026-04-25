@@ -39,7 +39,7 @@ export async function POST() {
   for (const user of activeUsers) {
     if (user.scores.length === 0) continue
 
-    const userValues = new Set(user.scores.map(s => s.score))
+    const userValues = new Set(user.scores.map((s: { score: number }) => s.score))
     const drawSet = new Set(drawNumbers)
     const matchCount = [...userValues].filter(v => drawSet.has(v)).length
 
