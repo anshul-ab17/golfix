@@ -52,7 +52,7 @@ const LandingPage = () => {
           <div className="mb-20">
             <h2 className="text-4xl md:text-5xl font-black mb-6">The Atelier Ecosystem</h2>
             <p className="text-xl text-slate-400 max-w-2xl font-light">
-              We've bridged the gap between personal excellence and collective good through three core pillars.
+              We&apos;ve bridged the gap between personal excellence and collective good through three core pillars.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

@@ -60,6 +60,7 @@ export default function DashboardPage() {
   useEffect(() => {
     fetchUser()
     fetchDraw()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   async function fetchUser() {
